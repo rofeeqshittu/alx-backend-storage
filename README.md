@@ -3,4 +3,4 @@
 
 ---
 
-*lets store -- databases* 
+*let's store the necessaries -- databases* 
