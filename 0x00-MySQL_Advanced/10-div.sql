@@ -1,17 +1,16 @@
 -- Creates a SQL func SafeDiv that divides 2 integers
-DELIMIER //
+DELIMITER //
 CREATE FUNCTION SafeDiv(
 	a INT,
 	b INT
 )
-RETURNS FLOAT
-DETERMINISTIC
+RETURNS FLOAT DETERMINISTIC
 BEGIN
-	-- Check if b is 0, return 0 if true, else return a / b
-	IF b = 0 THEN
-		RETURN 0;
-	ELSE
-		RETURN a / b;
+	DECLARE result FLOAT DEFAULT 0;
+
+	IF b != 0 THEN
+		SET result = a / b;
 	END IF
+	RETURN result;
 END //
 DELIMITER ;
