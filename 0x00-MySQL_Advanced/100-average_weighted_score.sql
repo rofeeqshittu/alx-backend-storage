@@ -1,6 +1,6 @@
 -- Compute Average Weighted Score for a User
 DELIMITER //
-CREATE PROCEDURE ComputerAverageWeightedScoreForUser(IN user_id INT)
+CREATE PROCEDURE ComputeAverageWeightedScoreForUser(IN user_id INT)
 BEGIN
 	DECLARE weighted_avg FLOAT;
 
