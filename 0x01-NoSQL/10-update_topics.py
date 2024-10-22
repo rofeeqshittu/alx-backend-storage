@@ -9,7 +9,7 @@ def update_topics(mongo_collection, name, topics):
     @name: The name of the school to update
     @topics: The list of topics to set for the school
     """
-    mongo_collection.update_one(
-            { "name": name },  # The filter to find the document
-            { "$set": { "topics": topics }} # The update operation
+    mongo_collection.update_many(
+            {"name": name},  # The filter to find the document
+            {"$set": {"topics": topics}}  # The update operation
             )
