@@ -24,11 +24,11 @@ This project is designed to introduce you to NoSQL databases, with a focus on Mo
 | 8      | [8-all.py](./8-all.py)        | Python function that lists all documents in a collection.                     |
 | 9      | [9-insert_school.py](./9-insert_school.py) | Python function that inserts a new document in a collection based on keyword arguments. |
 | 10     | [10-update_topics.py](./10-update_topics.py) | Python function that updates the topics of a school document based on the name. |
-| 11          | 11-schools_by_topic.py        | Python function that returns a list of schools having a specific topic.     |
-| 12          | 12-log_stats.py               | Python script that provides stats about Nginx logs stored in MongoDB.       |
-| 13          | 100-find                      | Script that lists documents where name starts with "Holberton" in MongoDB.  |
-| 14          | 101-students.py               | Python function that returns students sorted by average score in MongoDB.   |
-| 15          | 102-log_stats.py              | Improved log stats script to display the top 10 most present IPs.           |
+| 11          | [11-schools_by_topic.py](./11-schools_by_topic.py)                       | Python function that returns a list of schools having a specific topic.     |
+| 12          | [12-log_stats.py](./12-log_stats.py)                                     | Python script that provides stats about Nginx logs stored in MongoDB.       |
+| 13          | [100-find](./100-find)                                                   | Script that lists documents where name starts with "Holberton" in MongoDB.  |
+| 14          | [101-students.py](./101-students.py)                                     | Python function that returns students sorted by average score in MongoDB.   |
+| 15          | [102-log_stats.py](./102-log_stats.py)                                   | Improved log stats script to display the top 10 most present IPs.           |
 
 
 ## Setup Environment
