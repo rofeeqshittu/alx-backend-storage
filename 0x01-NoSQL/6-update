@@ -1,6 +1,6 @@
 // Script that adds a new attribute to a document in the collection school
 db.school.update(  // Newer version use "updateMany" fxn instead
 	{ name: "Holberton school" }, // Filter to find doc
-	{ $set: { address: "972 Mission street" } }  // Update operation to set
+	{ $set: { address: "972 Mission street" } },  // Update operation to set
 	{ multi: true }  // Option to update multiple doc, NO longer needed in newer version
 );
