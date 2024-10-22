@@ -1,0 +1,4 @@
+// List all documents with names starting with "Holberton" using a Regex in MongoDB
+db.school.find(
+	{ name: { $regex: '^Holberton', $options: 'i' } }
+)
