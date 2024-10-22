@@ -1,0 +1,3 @@
+// Script that displays the number of documents in the collection school
+let count = db.school.countDocuments();  // Used countDocuments() fxn
+print(count);
