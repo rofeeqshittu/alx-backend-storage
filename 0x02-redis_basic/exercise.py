@@ -26,3 +26,29 @@ class Cache:
         # Store data in Redis using the random key
         self._redis.set(random_key, data)
         return random_key  # Return the random key to the user
+
+    def get(self, key: str, fn: Optional[Callable] = None) ->
+    Union[str, bytes, int, float, None]:
+        """
+        Retrieve data from Redis using the provided key.
+        If the optional callable 'fn' is provided, apply it to the
+        retrieved data to convert it to the desired type. If the key does
+        not exit, return None.
+        """
+        data = self._redis.get(key)  # Retrieve data from Redis
+        if data is None:
+            return None  # Return None if the  key does not exit
+        if fn:
+            return data  # Return the raw data if no conversion fxn is provide
+
+    def get_str(self, key: str) -> Optional[str]:
+        """
+        Return a string from Redis by calling get & converting bytes to UTF-8
+        """
+        return self.get(key, fn=lambda d: d.decode('utf-8'))
+
+    def get_init(self, key: str) -> Optional[int]:
+        """
+        Retrieve an int from Redis by calling get & converting bytes to int.
+        """
+        return self.get(key, fn=int)
