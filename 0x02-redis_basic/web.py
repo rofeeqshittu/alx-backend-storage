@@ -10,7 +10,6 @@ from typing import Callable
 redis_client = redis.Redis()
 
 
-
 def get_page(url: str) -> str:
     """
     Fetches the HTML content of a given URL and caches it in Redis.
@@ -45,9 +44,10 @@ def get_page(url: str) -> str:
 
     return content
 
+
 # Example usage
 if __name__ == "__main__":
     url = "http://slowwly.robertomurray.co.uk"  # A URL to test slow response
     print(get_page(url))  # Fetch the page and print content
-    print(redis_client.get(f"count:{url}"))  # Check how many times the URL was accessed
-
+    # Check how many times the URL was accessed
+    print(redis_client.get(f"count:{url}"))
