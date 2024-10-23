@@ -3,6 +3,8 @@
 ## Overview
 This project focuses on using Redis for basic operations and caching in Python. Redis is an in-memory data structure store used as a database, cache, and message broker. The goal of this project is to familiarize yourself with basic Redis commands, handling data storage, retrieval, and advanced functionalities like expiring caches.
 
+![redis-fancy_table.png](redis-fancy_table.png)
+
 ## Concepts
 - **Redis Operations:** Learn to perform basic Redis operations such as storing strings, incrementing values, and working with lists.
 - **Caching:** Implement a caching system to optimize data access.
